@@ -66,31 +66,57 @@ main{
 
 #caixaConteudo{
     width: 100%;
-    height: 300px;
+    height: 500px;
+    align-content: center;
+}
+
+#caixaConteudo2{
+    width: 100%;
+    height: 500px;
     align-content: center;
 }
 
 #conteudo{
     display: inline-block;
-    width: 45%;
+    width: 40%;
     height: 300px;
     margin-left: 20px;
 }
 
-#imagemSobre{
-    display: inline-block;
-    background-image: url(../img/ViagemAviao.jpg);
-    width: 45%;
-    height: 300px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+#integrantes{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;;
+    height: auto;
+    margin-top: 20px;
     margin-right: 20px;
 }
 
+#destinosMain{
+    width: 70%;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+
+/*#imagemSobre{ 
+    display: inline-block;
+    width: 45%px;
+    height: 300px;
+    background-image: url(../img/640-summer-vacation-nature-travel-beautiful-summer-landscape-with-chair-beach-umbrella-on-sand-tropical-holiday-coconut-leaf-palm-tree-on-the-beach-with-sun-light-on-blue-sky-sea-and-ocean-background.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
 #rodape_caixa{
     display: flexbox;
-    width: 650px;
+    width: 820px;
     height: 200px;
     align-content: center;
     margin-left: auto;
@@ -106,7 +132,7 @@ main{
     font-weight: bold;
 }
 
-#rodape1, #rodape2, #rodape3{
+#rodape1, #rodape2, #rodape3, #rodape4{
     display: inline-block;
     width: 180px;
     height: 150px;
