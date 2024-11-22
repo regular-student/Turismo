@@ -19,7 +19,7 @@ nav a {
     text-decoration: none;
     color: black;
     transition: all 200ms ease-in;
-    font-size: 35px;
+    font-size: 30px;
 }
 nav a:hover {
     color: #1e94fcb5;
@@ -44,4 +44,12 @@ button {
 button:hover {
     background: #0e81e6b5;
 }
+#logo {
+    position: static;
 
+}
+#logo img{
+    background-image: url(https://img.pikbest.com/wp/202413/airplane-icon-vector-abstract-or-aeroplane-design-template_10461485.jpg!sw800);
+    width: 130%;
+    height: 130%;
+}
