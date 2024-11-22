@@ -10,6 +10,17 @@ header {
     height: 40px;
     align-items: center;
 }
+
+#logo{
+    display: inline-block;
+    background-image: url(../img/avião.png);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -53,10 +64,17 @@ main{
 #conteudo{
     width: 50%;
     height: 300px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
 }
 
 #ativo {
     color: #1e94fcb5;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    padding: 20px 0px 40px;
 }
