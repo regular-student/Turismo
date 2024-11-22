@@ -8,7 +8,8 @@ header {
     padding: 1rem 0;
     width: 100%;
     height: 40px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav {
     display: flex;
@@ -25,19 +26,20 @@ nav a:hover {
     color: #1e94fcb5;
 }
 #nav_dir {
-    width: 35%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 button {
     font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
     background-color: #1e94fcb5;
     border: none;
     outline: none;
     border-radius: 5%;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     cursor: pointer;
     transition: all 200ms ease-in;
 }
@@ -46,10 +48,58 @@ button:hover {
 }
 #logo {
     position: static;
+    width: 10%;
+    background: url(../img/logoavião.jpg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+}
+main{
+    width: 100%;
+    height: 1200px;
+}
+
+#conteudo{
+    width: 50%;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+#ativo {
+    color: #1e94fcb5;
+}
+
+#rodape_caixa{
+    display: flexbox;
+    width: 650px;
+    height: 200px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px 0px;
 
 }
-#logo img{
-    background-image: url(https://img.pikbest.com/wp/202413/airplane-icon-vector-abstract-or-aeroplane-design-template_10461485.jpg!sw800);
-    width: 130%;
-    height: 130%;
+
+#rodape_caixa a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#rodape1, #rodape2, #rodape3{
+    display: inline-block;
+    width: 180px;
+    height: 150px;
+    color: white;
+    padding: 0px 10px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    align-content: center;
+    padding: 20px 0px 40px;
 }
