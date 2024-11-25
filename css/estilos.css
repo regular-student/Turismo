@@ -58,6 +58,7 @@ button:hover {
 main{
     width: 100%;
     height: 2100px;
+<<<<<<< HEAD
 }
 #banner{
     width: 100%;
@@ -188,6 +189,86 @@ main{
 #conteudo_formulario{
     text-align: center;
 }
+=======
+}
+#banner{
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0e81e6b5;
+    background-image: url(../img/banner1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#titulo_incial{
+    text-align: center;
+}
+/* #informacoes{
+    width: 100%;
+    height: 350px;
+    background-color: #0e81e6b5;
+} */
+#informacoes div {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    margin-left: 6%;
+    margin-top: 10px;
+    background-color: #a2d6f9;
+}
+#image_um, #image_dois, #image_tres{
+    width: 100%;
+    height: 300px;
+    margin-top: auto;
+}
+#informacoes p{
+    text-align: justify;
+}
+#informacoes h3{
+    color: #1E96FC;
+}
+#informacoes h2{
+    text-align: center;
+}
+#informacoes a{
+    text-decoration: none;
+    color: #000306;
+}
+#pacotes{
+    width: 100%;
+    height: 700px;
+    background-color: #0e81e6b5;
+}
+#pacotes div{
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    margin-left: 6%;
+    margin-top: 40px;
+    background-color: #a2d6f9;
+}
+#pacotes h2{
+    color: #A2D6F9;
+    margin-left: 6%;
+    padding-top: 30px;
+}
+#pacotes h3{
+    text-align: center;
+}
+#pacotes_link{
+    text-align: center;
+}
+#pacotes_link a{
+    text-decoration: none;
+    color: #000306;
+}
+#image{ 
+    width: 100%;
+    height: 300px;
+    margin-top: auto;
+}
+>>>>>>> bd8f61ec8db92086e12fbdc078b0248715f0399c
 #ativo {
     color: #1e94fcb5;
 }
