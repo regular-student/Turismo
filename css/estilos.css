@@ -58,7 +58,6 @@ button:hover {
 main{
     width: 100%;
     height: 2100px;
-<<<<<<< HEAD
 }
 #banner{
     width: 100%;
@@ -189,8 +188,7 @@ main{
 #conteudo_formulario{
     text-align: center;
 }
-=======
-}
+
 #banner{
     width: 100%;
     height: 500px;
@@ -268,7 +266,6 @@ main{
     height: 300px;
     margin-top: auto;
 }
->>>>>>> bd8f61ec8db92086e12fbdc078b0248715f0399c
 #ativo {
     color: #1e94fcb5;
 }
