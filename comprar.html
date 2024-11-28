@@ -1,59 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
-</head>
-<body>
-    <header>
-        <nav>
-            <div id="logo">
-            </div>
-            <div id="nav_dir">
-                <a href="index.html">home</a>
-                <a href="destinos.html">destinos</a>
-                <a href="sobre.html">sobre</a>
-                <a href="pacotes.html">pacotes</a>
-                <a href="contato.html">contato</a>
-                <button>Comprar</button>
-            </div>
-        </nav> 
-    </header>
-
-    <main>
-        <nav id="destinosMain">
-            <h2>COMPRAR</h2>
-        </nav>
-    </main>
-    
-    <footer>
-        <div id="rodape_caixa">
-            <div id="rodape1"> 
-                <a href="sobre.html">Sobre</a>
-                <p>Quer saber um pouco mais sobre nos?</p>
-            </div>
-            <div id="rodape2">
-                <a href="destinos.html">Destinos</a>
-                <p>De uma olhada no seu proximo destino</p>
-            </div>
-            <div id="rodape3">
-                <a href="contato.html">Contato</a>
-                <p>Entre em contato com a gente</p>
-            </div>
-            <div id="rodape4">
-                <a href="pacotes.html">Pacotes</a>
-                <p>Conheça nossos pacotes especiais</p>
-            </div>
-    </footer>
-
-    <script src="js/codigos.js"></script>
-</body>
-</html>
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Formulário de compra</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+        <br>
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco">
+        <br>
+        <label for="Cartao">Número do cartão</label>
+        <input type="text" id="cartao" required> <input type="text" id="cartao2" placeholder="CVV">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>  

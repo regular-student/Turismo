@@ -1,7 +1,15 @@
-const button = document.querySelector("button");
+const modal = document.getElementById('modal');
+const closeModalButton = document.querySelector('.close');
 
-button.addEventListener("click", paginaCompra);
+document.querySelectorAll('.abre-form').forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        modal.style.display = 'flex';
+    });
+});
 
-function paginaCompra(){
-    window.location.href = "comprar.html";
-}
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
