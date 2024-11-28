@@ -11,6 +11,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+
+    <style>
+        #input {
+            width: 100%;
+            border: 2px solid #0e81e6b5;
+            outline: none;
+            background: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            border-radius: 5px;
+        }
+
+        label{
+            font-weight: 700;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -50,16 +68,19 @@
                     <form id="conteudo_formulario">
                         <label>Nome Completo</label>
                         <br>
-                        <input type="text">
+                        <input id="input" type="input">
                         <br>
 
                         <label>E-mail</label>
                         <br>
-                        <input id="contatoCaixa" type="text" placeholder="Mensagem...">
+                        <input id="input" type="text" placeholder="">
                         <br><br>
                         <!-- <textarea>Mensagem</textarea> -->
                         <br><br>
-
+                        <label for="">Mensagem</label>
+                        <br>
+                        <textarea name="Mensagem" id="input"></textarea>
+                        <br><br>
                         <button type="submit">Enviar</button>
                     </form>
 

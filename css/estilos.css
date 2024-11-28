@@ -239,6 +239,8 @@ footer{
 }
 #conteudo_formulario{
     text-align: center;
+    width: 350px;
+    margin: auto;
 }
 
 #banner{
@@ -407,3 +409,4 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
 }*/
+
