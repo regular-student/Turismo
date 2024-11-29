@@ -6,7 +6,39 @@
     <title>Turismo</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style>
-
+        .conteudo1 {
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+        .imagem {
+            height: 1000px;
+        }
+        .imagem img {
+            margin-left: 0px;
+            box-shadow: 0px 0px 15px rgb(189, 189, 189);
+            border-radius: 25px;
+            transition: all 200ms ease-in;
+            backface-visibility: hidden;
+            width: 100%;
+            height: 300px;
+        }
+        .imagem button {
+            opacity: 0;
+            position: absolute;
+            top: 140px;
+            left: 185px;
+            text-align: center;
+        }
+        .imagem img:hover {
+            opacity: 0.3;
+        }
+        .imagem button:hover {
+            opacity: 1;
+        }
+        h2:hover, span{
+            color: #1e94fcb5;
+        }
     </style>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -26,23 +58,77 @@
                 <a href="sobre.html">sobre</a>
                 <a id="ativo" href="pacotes.html">pacotes</a>
                 <a href="contato.html">contato</a>
-                <button>Comprar</button>
+                <button id="comprar" class="abre-form">Comprar</button>
             </div>
         </nav> 
     </header>
     <main>
-        <div id="conteudo" class="img">
-            <div class="imagem">
-                <img src="./img/Brasilia.jpg" alt="Brasilia">
-                <img src="./img/FozIguacu.jpg" alt="Foz do iguaçu">
-                <img src="./img/Recife.jpg" alt="Recife">
-            </div>
-            <div class="botoes">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
+        <div id="conteudo">
+            <div class="conteudo1">
+                <div class="imagem">
+                    <img src="./img/Brasilia.jpg" alt="Brasilia">
+                    <button id="comprar" class="abre-form">Comprar</button>
+                    <h1>Pacote <span>Brasília</span></h1>
+                    <p style="font-size: larger;">Brasília, a capital do Brasil, é muito mais do que política e arquitetura. Com um design único planejado por Oscar Niemeyer e Lúcio Costa, a cidade encanta com suas curvas futuristas e amplos espaços verdes. Descubra o icônico Eixo Monumental, o belíssimo Lago Paranoá e as surpreendentes atrações culturais que fazem de Brasília um destino imperdível.</p>
+                    <h2>Hospedagem</h2>
+                    <h2>Café da manhã</h2>
+                    <h2>Passeios guiados</h2>
+                    <h2>Serviço de transfer do aeroporto ao hotel</h2>
+                    <br><br><br><br><br>
+                    <h1>Preço promocional: A partir de <span>R$ 3.499</span> por pessoa.</h1>
+                </div>
+                <div class="imagem">
+                    <img src="./img/FozIguacu.jpg" alt="Foz do iguaçu">
+                    <button id="comprar" class="abre-form">Comprar</button>
+                    <h1>Pacote <span>Foz do Iguaçu</span></h1>
+                    <p style="font-size: larger;">Foz do Iguaçu é um espetáculo da natureza. Lar das majestosas Cataratas do Iguaçu, uma das Sete Maravilhas Naturais do Mundo, essa cidade é um convite à aventura. Além das quedas d’água, explore o Parque das Aves, a energia impressionante da Usina de Itaipu e viva momentos inesquecíveis na tríplice fronteira entre Brasil, Paraguai e Argentina.</p>
+                    <h2>Hospedagem</h2>
+                    <h2>Café da manhã</h2>
+                    <h2>Atividades exclusivas</h2>
+                    <h2>Passeios guiados</h2>
+                    <h2>Serviço de transfer do aeroporto ao hotel</h2>
+                    <br><br><br>
+                    <h1>Preço promocional: A partir de <span>R$ 9.499</span> por pessoa.</h1>
+                </div>
+                <div class="imagem">
+                    <img src="./img/Recife.jpg" alt="Recife">
+                    <button id="comprar" class="abre-form">Comprar</button>
+                    <h1>Pacote <span>Recife</span></h1>
+                    <p style="font-size: larger;">Conhecida como a “Veneza Brasileira”, Recife é um destino vibrante e cheio de história. Com suas pontes, canais e casarões coloniais, a cidade mistura o charme do passado com a energia da cultura nordestina. Aproveite as praias paradisíacas, como Boa Viagem, e explore o vizinho Olinda, com suas ladeiras coloridas e o calor contagiante do frevo.</p>
+                    <h2>Hospedagem em resort</h2>
+                    <h2>Passeio de barco</h2>
+                    <h2>Café da manhã</h2>
+                    <h2>Atividades exclusivas</h2>
+                    <h2>Passeios guiados</h2>
+                    <h2>Serviço de transfer do aeroporto ao hotel</h2>
+                    <br><br>
+                    <h1>Preço promocional: A partir de <span>R$ 4.499</span> por pessoa.</h1>
+                </div>
             </div>
         </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Formulário de compra</h2>
+              <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+                <br>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco">
+                <br>
+                <label for="Cartao">Número do cartão</label>
+                <input type="text" id="cartao" required> <input type="text" id="cartao2" placeholder="CVV">
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>  
     </main>
     <footer>
         <div id="rodape_caixa">
